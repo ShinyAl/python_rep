@@ -43,9 +43,9 @@ def get_letter_grade(score):
     else:
         return "F"
 
-print get_letter_grade(get_average(lloyd))
-print get_letter_grade(get_average(alice))
-print get_letter_grade(get_average(tyler))
+print "Average grade %s: %s" % ("Lloyd", (get_letter_grade(get_average(lloyd))))
+print "Average grade %s: %s" % ("Alice", (get_letter_grade(get_average(alice))))
+print "Average grade %s: %s" % ("Tyler", (get_letter_grade(get_average(tyler))))
 
 def get_class_average(students):
     results = list()
@@ -54,5 +54,5 @@ def get_class_average(students):
         results.append(summary)
     return average(results)
     
-print get_class_average(students)
-print get_letter_grade(get_class_average)
+print 'Full Class Average grade in scores: %s' %(get_class_average(students))
+print 'Full Class Average grade: %s' %(get_letter_grade(get_class_average))
