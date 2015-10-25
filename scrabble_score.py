@@ -3,7 +3,7 @@ score = {"a": 1, "c": 3, "b": 3, "e": 1, "d": 2, "g": 2,
          "l": 1, "o": 1, "n": 1, "q": 10, "p": 3, "s": 1, 
          "r": 1, "u": 1, "t": 1, "w": 4, "v": 4, "y": 4, 
          "x": 8, "z": 10}
-word = raw_input("Enter your word:")
+word = input("Enter your word:")
 def scrabble_score(word):
     if len(word) > 0 and word.isalpha():
         word = word.lower()
@@ -12,4 +12,4 @@ def scrabble_score(word):
             if letter in score:
                 total += score[letter]
         return total
-print "Your score is: %s" % (scrabble_score(word))
+print ("Your score is: %s" % (scrabble_score(word)))

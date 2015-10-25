@@ -18,20 +18,25 @@ tyler = {
 }
 
 students = [lloyd, alice, tyler]
+
+
 # Add your function below!
-def average(numbers):
+
+def average( numbers ):
     total = sum(numbers)
     total = float(total)
-    total = total / len(numbers)
+    total /= len(numbers)
     return total
-    
-def get_average(student):
+
+
+def get_average( student ):
     homework = average(student["homework"])
     quizzes = average(student["quizzes"])
     tests = average(student["tests"])
     return 0.1 * homework + 0.3 * quizzes + 0.6 * tests
-    
-def get_letter_grade(score):
+
+
+def get_letter_grade( score ):
     if score >= 90:
         return "A"
     elif score >= 80:
@@ -43,16 +48,19 @@ def get_letter_grade(score):
     else:
         return "F"
 
-print "Average grade %s: %s" % ("Lloyd", (get_letter_grade(get_average(lloyd))))
-print "Average grade %s: %s" % ("Alice", (get_letter_grade(get_average(alice))))
-print "Average grade %s: %s" % ("Tyler", (get_letter_grade(get_average(tyler))))
 
-def get_class_average(students):
+print("Average grade %s: %s" % ("Lloyd", (get_letter_grade(get_average(lloyd)))))
+print("Average grade %s: %s" % ("Alice", (get_letter_grade(get_average(alice)))))
+print("Average grade %s: %s" % ("Tyler", (get_letter_grade(get_average(tyler)))))
+
+
+def get_class_average( students ):
     results = list()
     for student in students:
         summary = get_average(student)
         results.append(summary)
     return average(results)
-    
-print 'Full Class Average grade in scores: %s' %(get_class_average(students))
-print 'Full Class Average grade: %s' %(get_letter_grade(get_class_average))
+
+
+print('Full Class Average grade in scores: %s' % (get_class_average(students)))
+print('Full Class Average grade: %s' % (get_letter_grade(get_class_average(students))))
