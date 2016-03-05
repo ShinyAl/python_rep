@@ -1,0 +1,41 @@
+Austria	20.0%
+Bangladesh	15%
+Belarus	18%
+Belgium	21%
+Brazil	25%
+Bulgaria	20%
+People's Republic of China	17%
+Colombia	16%
+Croatia	22%
+Czech Republic	19%
+Denmark	25%
+Estonia	18%
+Finland	22%
+France	19.6%
+Germany	19%
+Greece	19%
+Hungary	20%
+India	12.5%
+Ireland	21%
+Israel	15.5%
+Italy	20%
+Luxembourg	15%
+Mexico	15%
+Monaco	19.6%
+Netherlands	19%
+New Zealand	12.5%
+Norway	25%
+Pakistan	15%
+Poland	22%
+Portugal	21%
+Romania	19%
+Russia	18%
+Slovakia	19%
+Spain	16%
+Switzerland	7.6%
+Turkey	18%
+Ukraine	20%
+United Kingdom	17.5%
+Uruguay	23%
+Venezuela	10%
+Zambia	17.5%
